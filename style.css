@@ -88,23 +88,32 @@ body {
 }
 
 .interface-3 .exo-2 {
-  border: #a1a1a1 solid 1px;
+  border: #e4e1e1 solid 0.5px;
   width: 500px;
   height: 260px;
   display: flex;
+  box-shadow: 0.1px 0.1px 0.5px 0.1px;
 }
 .interface-3 .exo-2 .image {
   height: 262px;
+}
+.interface-3 .exo-2 .content {
+  padding: 0px 25px;
+  text-align: justify;
 }
 .interface-3 .exo-2 .content .text {
   padding: 10px 20px;
 }
 .interface-3 .exo-2 .content .text h3 {
   font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-bottom: 0px;
 }
 .interface-3 .exo-2 .content .text p {
   color: #a8a7a7;
-  font-size: 15px;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 .interface-3 .exo-2 .content .josiah {
   display: flex;
@@ -119,11 +128,17 @@ body {
   height: 50px;
 }
 .interface-3 .exo-2 .content .josiah .info p {
-  font-size: 15px;
+  font-size: 13px;
+  margin-bottom: 0px;
 }
 .interface-3 .exo-2 .content .josiah .info span {
   color: #a8a7a7;
-  font-size: 13px;
+  font-size: 11px;
+}
+.interface-3 .exo-2 .content .josiah i {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
