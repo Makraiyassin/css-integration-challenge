@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google-font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
+    
+    <title>CSS challenge</title>
 </head>
 <body>
-    <div class="interface-1">
+<!-- _________________________________________________________________________________________________________-->
+            <!-- navbar bootstrap -->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mr-5" href="#">CSS CHALLENGE</a>              
+        <ul class="navbar-nav mr-auto ml-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="#interface1">interface 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interface2">interface 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#interface3">interface 3</a>
+            </li>  
+        </ul>
+        </nav>       
+<!-- _________________________________________________________________________________________________________ -->
+
+    <div id="interface1" class="interface-1">
         <div class="grunt">
             <img src="images/sanglier.png" alt="grunt">
             <div class="title"><h1>Le Titre</h1></div>
@@ -32,7 +56,7 @@
         </div>
     </div>
     <hr>
-    <div class="interface-2">
+    <div id="interface2" class="interface-2">
         <div class="exo-2">
             <div class="box">
                 <header>
@@ -41,35 +65,35 @@
                     <span>page views per minute</span>
                 </header>
                 <hr>
-                <section>
-                <img src="images/graphique.png" alt="graphique">
-                <table>
-                    <tr>
-                        <th><span> Top Active Pages</span></th>
-                        <th class="tac"><span>Users</span></th>
-                    </tr>
-                    <tr>
-                        <th>/actualites/so...nfants-femmes</th>
-                        <th class="tac">46</th>
-                    </tr>
-                    <tr>
-                        <th>/actualites/pol...arme-politique</th>
-                        <th class="tac">8</th>
-                    </tr>
-                    <tr>
-                        <th>/actualites/so...existe-femmes</th>
-                        <th class="tac">3</th>
-                    </tr>
-                    <tr>
-                        <th>/p/159944294/...ee-de-meurtre</th>
-                        <th class="tac">3</th>
-                    </tr>
-                    <tr>
-                        <th class="pb">/programmes-tele</th>
-                        <th class="tac pb">3</th>
-                    </tr>
-                </table>
-                </section>
+                <div class="section">
+                    <img src="images/graphique.png" alt="graphique">
+                    <table>
+                        <tr>
+                            <th><span> Top Active Pages</span></th>
+                            <th class="tac"><span>Users</span></th>
+                        </tr>
+                        <tr>
+                            <th>/actualites/so...nfants-femmes</th>
+                            <th class="tac">46</th>
+                        </tr>
+                        <tr>
+                            <th>/actualites/pol...arme-politique</th>
+                            <th class="tac">8</th>
+                        </tr>
+                        <tr>
+                            <th>/actualites/so...existe-femmes</th>
+                            <th class="tac">3</th>
+                        </tr>
+                        <tr>
+                            <th>/p/159944294/...ee-de-meurtre</th>
+                            <th class="tac">3</th>
+                        </tr>
+                        <tr>
+                            <th class="pb">/programmes-tele</th>
+                            <th class="tac pb">3</th>
+                        </tr>
+                    </table>
+                </div>
                 
                 <footer>
                     <p>REAL-TIME REPORT</p>
@@ -79,7 +103,7 @@
         </div>
     </div>
     <hr>
-    <div class="interface-3">
+    <div id="interface3" class="interface-3">
         <div class="exo-3">
             <img class="image" src="images/img.png" alt="image">
             <div class="content">
@@ -95,8 +119,9 @@
                     </div>
                     <i class="fa fa-bookmark"></i>
                 </div>
-            </div>      
-        </div>    
+            </div>
+        </div> 
+        <a class="return" href="#nav">⮝</a>         
     </div>
 </body>
 </html>
