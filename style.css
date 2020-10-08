@@ -1,7 +1,7 @@
 .interface-3, .interface-2, .interface-1 {
   width: 80%;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
 }
 
 .interface-1 {
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 0px;
@@ -41,104 +42,177 @@ body {
 .interface-1 .npm {
   grid-area: 1/4/2/5;
 }
+
+.interface-2 {
+  margin-bottom: 50px;
+  color: white;
+}
+.interface-2 .exo-2 {
+  padding: 5px;
+  width: 320px;
+  height: 505px;
+  margin: auto;
+  background-color: #f2f2f2;
+}
+.interface-2 .exo-2 .box {
+  position: absolute;
+  width: 320px;
+  height: 505px;
+  background-color: #468df1;
+  border-radius: 5px;
+}
+.interface-2 .exo-2 .box span {
+  color: rgba(248, 246, 246, 0.7);
+  font-size: 11px;
+}
+.interface-2 .exo-2 .box hr {
+  margin: 0px 20px;
+}
+.interface-2 .exo-2 .box p, .interface-2 .exo-2 .box th {
+  margin: 0px;
+  font-size: 13px;
+}
+.interface-2 .exo-2 .box header {
+  margin: 0px 20px;
+}
+.interface-2 .exo-2 .box header p {
+  margin-top: 20px;
+}
+.interface-2 .exo-2 .box header h1 {
+  margin: 15px 0px 35px;
+}
+.interface-2 .exo-2 .box section {
+  margin: 0px 20px;
+  text-align: left;
+}
+.interface-2 .exo-2 .box section table {
+  width: 100%;
+}
+.interface-2 .exo-2 .box section table th {
+  border-bottom: rgba(248, 246, 246, 0.5) solid 0.3px;
+}
+.interface-2 .exo-2 .box section table .tac {
+  text-align: center;
+}
+.interface-2 .exo-2 .box section table .pb {
+  padding-bottom: 50px;
+}
+.interface-2 .exo-2 .box footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 20px;
+}
+.interface-2 .exo-2 .box footer p {
+  padding: 5px;
+  margin: 5px;
+}
+.interface-2 .exo-2 .box footer i {
+  padding: 5px;
+  margin-top: 2px;
+}
+
+.interface-3 {
+  margin-bottom: 50px;
+}
+.interface-3 .exo-3 {
+  border: #e4e1e1 solid 0.5px;
+  width: 500px;
+  height: 260px;
+  display: flex;
+  margin: auto;
+  box-shadow: 0.1px 0.1px 0.5px 0.1px;
+}
+.interface-3 .exo-3 .image {
+  height: 262px;
+}
+.interface-3 .exo-3 .content {
+  padding: 0px 25px;
+  text-align: justify;
+}
+.interface-3 .exo-3 .content .text {
+  padding: 10px 20px;
+}
+.interface-3 .exo-3 .content .text h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-bottom: 0px;
+}
+.interface-3 .exo-3 .content .text p {
+  color: #a8a7a7;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.interface-3 .exo-3 .content .josiah {
+  display: flex;
+}
+.interface-3 .exo-3 .content .josiah img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.interface-3 .exo-3 .content .josiah .info {
+  height: 50px;
+}
+.interface-3 .exo-3 .content .josiah .info p {
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.interface-3 .exo-3 .content .josiah .info span {
+  color: #a8a7a7;
+  font-size: 11px;
+}
+.interface-3 .exo-3 .content .josiah i {
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 24px;
+}
+
 @media only screen and (max-width: 1024px) {
-  .interface-1 .interface-1 {
+  .interface-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  .interface-1 .interface-1 .grunt {
+  .interface-1 .grunt {
     grid-area: 1/1/2/2;
   }
-  .interface-1 .interface-1 .gulp {
+  .interface-1 .gulp {
     grid-area: 1/2/2/3;
   }
-  .interface-1 .interface-1 .git {
+  .interface-1 .git {
     grid-area: 2/1/3/2;
   }
-  .interface-1 .interface-1 .npm {
+  .interface-1 .npm {
     grid-area: 2/2/3/3;
   }
 }
 @media only screen and (max-width: 740px) {
-  .interface-1 .interface-1 {
+  .interface-1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  .interface-1 .interface-1 img {
+  .interface-1 img {
     margin-left: 30%;
   }
-  .interface-1 .interface-1 .grunt {
+  .interface-1 .grunt {
     grid-area: 1/1/2/2;
   }
-  .interface-1 .interface-1 .gulp {
+  .interface-1 .gulp {
     grid-area: 2/1/3/2;
   }
-  .interface-1 .interface-1 .git {
+  .interface-1 .git {
     grid-area: 3/1/4/2;
   }
-  .interface-1 .interface-1 .npm {
+  .interface-1 .npm {
     grid-area: 4/1/5/2;
   }
-}
-
-.interface-3 .exo-2 {
-  border: #e4e1e1 solid 0.5px;
-  width: 500px;
-  height: 260px;
-  display: flex;
-  box-shadow: 0.1px 0.1px 0.5px 0.1px;
-}
-.interface-3 .exo-2 .image {
-  height: 262px;
-}
-.interface-3 .exo-2 .content {
-  padding: 0px 25px;
-  text-align: justify;
-}
-.interface-3 .exo-2 .content .text {
-  padding: 10px 20px;
-}
-.interface-3 .exo-2 .content .text h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  margin-bottom: 0px;
-}
-.interface-3 .exo-2 .content .text p {
-  color: #a8a7a7;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 30px;
-}
-.interface-3 .exo-2 .content .josiah {
-  display: flex;
-}
-.interface-3 .exo-2 .content .josiah img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin: 10px;
-}
-.interface-3 .exo-2 .content .josiah .info {
-  height: 50px;
-}
-.interface-3 .exo-2 .content .josiah .info p {
-  font-size: 13px;
-  margin-bottom: 0px;
-}
-.interface-3 .exo-2 .content .josiah .info span {
-  color: #a8a7a7;
-  font-size: 11px;
-}
-.interface-3 .exo-2 .content .josiah i {
-  margin-top: 20px;
-  margin-left: 30px;
-  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
