@@ -4,6 +4,10 @@
   margin-top: 10%;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .interface-1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -37,51 +41,89 @@
 .interface-1 .npm {
   grid-area: 1/4/2/5;
 }
-
 @media only screen and (max-width: 1024px) {
-  .interface-1 {
+  .interface-1 .interface-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  .interface-1 .grunt {
+  .interface-1 .interface-1 .grunt {
     grid-area: 1/1/2/2;
   }
-  .interface-1 .gulp {
+  .interface-1 .interface-1 .gulp {
     grid-area: 1/2/2/3;
   }
-  .interface-1 .git {
+  .interface-1 .interface-1 .git {
     grid-area: 2/1/3/2;
   }
-  .interface-1 .npm {
+  .interface-1 .interface-1 .npm {
     grid-area: 2/2/3/3;
   }
 }
 @media only screen and (max-width: 740px) {
-  .interface-1 {
+  .interface-1 .interface-1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  .interface-1 img {
+  .interface-1 .interface-1 img {
     margin-left: 30%;
   }
-  .interface-1 .grunt {
+  .interface-1 .interface-1 .grunt {
     grid-area: 1/1/2/2;
   }
-  .interface-1 .gulp {
+  .interface-1 .interface-1 .gulp {
     grid-area: 2/1/3/2;
   }
-  .interface-1 .git {
+  .interface-1 .interface-1 .git {
     grid-area: 3/1/4/2;
   }
-  .interface-1 .npm {
+  .interface-1 .interface-1 .npm {
     grid-area: 4/1/5/2;
   }
+}
+
+.interface-3 .exo-2 {
+  border: #a1a1a1 solid 1px;
+  width: 500px;
+  height: 260px;
+  display: flex;
+}
+.interface-3 .exo-2 .image {
+  height: 262px;
+}
+.interface-3 .exo-2 .content .text {
+  padding: 10px 20px;
+}
+.interface-3 .exo-2 .content .text h3 {
+  font-family: "Roboto", sans-serif;
+}
+.interface-3 .exo-2 .content .text p {
+  color: #a8a7a7;
+  font-size: 15px;
+}
+.interface-3 .exo-2 .content .josiah {
+  display: flex;
+}
+.interface-3 .exo-2 .content .josiah img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.interface-3 .exo-2 .content .josiah .info {
+  height: 50px;
+}
+.interface-3 .exo-2 .content .josiah .info p {
+  font-size: 15px;
+}
+.interface-3 .exo-2 .content .josiah .info span {
+  color: #a8a7a7;
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */
